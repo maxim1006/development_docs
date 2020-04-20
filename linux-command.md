@@ -64,3 +64,8 @@ mkdir -p /data/db
 
 (launch mongo)
 sudo mongod
+
+# echo
+echo "export VAR_NAME='VAR_VALUE''" > var-file.env
+echo "var-file" >> .gitignore
+source ./var-file.env

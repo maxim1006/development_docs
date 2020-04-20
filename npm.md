@@ -4,3 +4,9 @@
 #npm audit fix
 если в проекте есть package.lock файл, то команда проверит все пакеты на секьюрити уязвимости
 
+#npm audit 
+Проверка на пакеты с vulnerability
+
+#npm i --package-lock-only
+проинсталлить только package.lock (нужно для npm audit)
+
