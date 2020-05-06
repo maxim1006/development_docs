@@ -13,3 +13,49 @@
 #npm show
 npm show  @angular/core@* version //посмотреть все версии пакета
 
+#npm config
+npm config set package-lock false - удалить package.lock глобально
+
+#npm commands
+npm s имя_того_что_ищу - поиск модулей
+npm i имя_модуля - инсталляция модуля, чтобы проинсталлить конкретную версию делаю так npm i имя_модуля@версия_модуля
+npm -g i express - поставить модуль глобально
+npm up имя_модуля - апдейт модуля всех модулей если не указывать конкретный
+npm r имя_модуля - удалить модуль
+
+# Чтобы опубликовать модуль npm
+npm init (создает package.json)
+npm adduser
+npm publish
+npm unpublish
+
+#tilda and caret
+~ - будет грузить 1.2.3 вместо 1.2.2 
+^ -  1.3.2 вместо 1.2.2
+
+#чтобы исправить ошибку гит
+git config --global url."https://github.com/".insteadOf git@github.com:
+git config --global url."https://".insteadOf git://
+
+git config --system core.longpaths true
+
+#npm repo (Чтобы посмотреть проект на гитхаб)
+npm repo имя_пакета
+
+#npm list (Посмотреть версии пакетов)
+npm list --depth=0
+
+#npm uninstall
+npm uninstall имя_пакета
+
+#Обновить npm
+npm install npm@latest -g
+
+#Посмотреть устаревшие модули
+npm outdated
+
+#Обновить все пакеты
+$ npm install -g npm-check-updates
+$ npm-check-updates -u
+$ npm install 
+ncu -a (проапдейтить package.json)
