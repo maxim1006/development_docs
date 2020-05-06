@@ -10,3 +10,6 @@
 #npm i --package-lock-only
 проинсталлить только package.lock (нужно для npm audit)
 
+#npm show
+npm show  @angular/core@* version //посмотреть все версии пакета
+

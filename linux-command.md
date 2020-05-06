@@ -69,3 +69,6 @@ sudo mongod
 echo "export VAR_NAME='VAR_VALUE''" > var-file.env
 echo "var-file" >> .gitignore
 source ./var-file.env
+
+# create gzip
+cat ./dist{file1, file2, file3}.js | gzip > gulpfile.js.gzip - //собрать все в 1 файл и добавить в gzip
