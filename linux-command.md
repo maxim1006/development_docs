@@ -41,6 +41,12 @@ alias pf="ps -e | grep $1" (pf shutter - пример найти PID проце�
 # kill
 kill pid-of-program (ps -e | grep webstorm, затем kill PID)
 
+# find and kill process on port
+Find:
+sudo lsof -i :3000
+Kill:
+kill -9 <PID>
+
 # get all PATH
 echo $PATH
 
