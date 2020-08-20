@@ -12,6 +12,14 @@ grep "some string" file
 grep -i "REact" file (case insensitive
 grep -c "react" index.js (c is for count)
 
+grep -nr 'yourString*' .
+The dot at the end searches the current directory. Meaning for each parameter:
+
+-n            Show relative line number in the file
+'yourString*' String for search, followed by a wildcard character
+-r            Recursively search subdirectories listed
+.             Directory for search (current directory)
+
 # cat
 cat .bashrc | less (показать файл + использовать less, q - выйти)
 cat somefile > somefile2 (copy and create from file somefile to somefile2)
