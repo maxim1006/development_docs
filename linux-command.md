@@ -39,6 +39,9 @@ rmdir some-directory (removes empty directory)
 find path -name filename
 find . -name "*.js"
 
+// найти папку
+sudo find / -type d -name "*shared-docker*"
+
 # mv
 mv somefile /to/some/other/path
 mv ~/Documents/Ukulele/Apache.pdf . (from ~/Documents/Ukulele/Apache.pdf to current folder)
