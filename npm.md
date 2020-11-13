@@ -14,7 +14,7 @@
 проинсталлить только package.lock (нужно для npm audit)
 
 #npm show
-npm show  @angular/core@* version //посмотреть все версии пакета
+ npm view __package_name__ versions  --json //посмотреть все версии пакета
 
 #npm config
 npm config set package-lock false - удалить package.lock глобально
