@@ -8,11 +8,24 @@ cd ~ (вернуться в домашнюю директорию)
 touch file__name
 
 # grep (найти)
-grep "some string" file
-grep -i "REact" file (case insensitive)
+grep "some string" __file-name__
+grep -i "REact" __file-name__ (case insensitive)
 grep -c "react" index.js (c is for count)
 рекурсивный поиск слов в директории
 grep -nri __слово-для-поиска__ __директория__
+
+// поиск паттерна по пути
+grep -rnw '/path/to/somewhere/' -e 'pattern'
+
+// This will only search through those files which have .c or .h extensions:
+grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e "pattern"
+
+// This will exclude searching all the files ending with .o extension:
+grep --exclude=\*.o -rnw '/path/to/somewhere/' -e "pattern"
+
+// For directories it's possible to exclude one or more directories using the --exclude-dir parameter. For example, this will exclude the dirs dir1/, dir2/ and all of them matching *.dst/:
+grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e "pattern"
+
 
 grep -nr 'yourString*' .
 The dot at the end searches the current directory. Meaning for each parameter:
@@ -38,6 +51,7 @@ rm -rf some-directory
 rmdir some-directory (removes empty directory)
 
 # find
+// найти файл
 find path -name filename
 find . -name "*.js"
 
@@ -52,7 +66,7 @@ mv ~/Documents/Ukulele/Apache.pdf . (from ~/Documents/Ukulele/Apache.pdf to curr
 alias pf="ps -e | grep $1" (pf shutter - пример найти PID процесса shutter)
 
 # kill
-kill pid-of-program (ps -e | grep webstorm, затем kill PID)
+kill pid-of-program (ps -ef | grep webstorm, затем kill PID)
 
 # find and kill process on port
 Find:
