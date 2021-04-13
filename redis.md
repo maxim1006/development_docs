@@ -13,6 +13,9 @@ sudo cp src/redis-cli /usr/local/bin/
 чтобы сделать переменные и теперь могу запустить сервер
 redis-server
 
+а чтобы запустить redis-cli в соседнем терминале запускаю 
+redis-cli
+
 // в connect-redis пакеты для работы с express
 npm install redis connect-redis express-session @types/redis @types/express-session @types/connect-redis
 

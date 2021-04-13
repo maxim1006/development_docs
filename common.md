@@ -1,4 +1,9 @@
 sow - scope of work, 
 rfp - request for proposal
 self assessment report
-Functional Design Specification
+fds - functional design Specification
+dds - detailed design Specification
+
+
+
+

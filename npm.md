@@ -58,7 +58,21 @@ npm install npm@latest -g
 npm outdated
 
 #Обновить все пакеты
+// List security breaches
+npm audit
+// проверить старые модули
+npm outdated
 $ npm install -g npm-check-updates
 $ npm-check-updates -u
 $ npm install 
 ncu -a (проапдейтить package.json)
+
+// yarn
+yarn outdated
+yarn upgrade
+yarn upgrade-interactive
+yarn upgrade-interactive --latest
+
+// npm
+npm outdated
+npm update
