@@ -76,3 +76,19 @@ yarn upgrade-interactive --latest
 // npm
 npm outdated
 npm update
+
+
+### link 
+
+// in components project make
+npm link
+
+// in receiver project
+npm link __package-name__
+
+// unlink
+sudo npm rm --global __package-name__
+
+// list of all global packages
+npm ls --global --depth 0
+ 
