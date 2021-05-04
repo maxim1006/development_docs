@@ -65,7 +65,7 @@ npm outdated
 $ npm install -g npm-check-updates
 $ npm-check-updates -u
 $ npm install 
-ncu -a (проапдейтить package.json)
+ncu -u (проапдейтить package.json)
 
 // yarn
 yarn outdated
