@@ -4,7 +4,7 @@ sudo purge
 # cd
 cd ~ (вернуться в домашнюю директорию)
 
-# touch (создать файл)
+# touch (создать файл / create file)
 touch file__name
 
 # grep (найти)
@@ -66,11 +66,15 @@ mv ~/Documents/Ukulele/Apache.pdf . (from ~/Documents/Ukulele/Apache.pdf to curr
 alias pf="ps -e | grep $1" (pf shutter - пример найти PID процесса shutter)
 
 # kill
-kill pid-of-program (ps -ef | grep webstorm, затем kill PID)
+kill pid-of-program 
+
+# ps 
+ps -ef | grep webstorm, затем kill PID
+ps -ax | grep mysql // найти все процессы, выдаст pid
 
 # find and kill process on port
 Find:
-sudo lsof -i :3000
+sudo lsof -i :3000 // найти процесс на порту
 Kill:
 kill -9 <PID>
 
@@ -82,6 +86,20 @@ whoami
 
 # add permission to folder for user (have to open terminal inside folder)
 sudo chown __use-name__ .
+sudo  chown mysql:mysql mysql-files // дать права пользователю mysql и группе mysql на папку mysql-files
+
+sudo chown -R mysql /usr/local/var/mysql/
+
+# chmod
+http://linuxcommand.org/lc3_lts0090.php
+
+chmod 600 some_file // для файла только оунер может менять
+chmod 755 ./ // для директории
+
+sudo chmod -R 777 /usr/local/var/mysql/  // проставить разрешения для запуска mysql, затем sudo /usr/local/Cellar/mysql/8.0.25_1/support-files/mysql.server start
+
+# check ownership
+ls -laF /usr/local/var/mysql/
 
 # add path to $PATH
 export MONGO_PATH=/Users/max/mongodb
